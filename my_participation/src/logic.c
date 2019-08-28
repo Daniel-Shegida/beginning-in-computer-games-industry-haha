@@ -27,3 +27,16 @@
 }
 
 */
+
+struct entity* find(int target,struct entity *last)
+{
+    Entity *futureLast = (Entity*)malloc(sizeof(Entity));
+    futureLast = last ;
+    while (futureLast->place != target )
+    {
+        futureLast = futureLast->next;
+    }
+    puts("yey");
+    printf(" his def is %d  end of it      ",futureLast->def);
+    return futureLast;
+}

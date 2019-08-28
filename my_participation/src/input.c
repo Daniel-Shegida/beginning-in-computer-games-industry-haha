@@ -1,7 +1,7 @@
 
 #include "input.h"
 
-void doInput(int position[])
+void doInput(int position[],struct Entity *head,struct Entity *attacker)
 {
     SDL_Event event;
 
@@ -72,6 +72,8 @@ void doInput(int position[])
                 case 1 :
                     if (position[1])
                     {
+                        printf(" position[2]%d(position[2]-1)", (position[2]));
+                        player_attack(head,attacker , (position[2]));
                         position[1] = 0;
                         position[0] = 1;
                     }

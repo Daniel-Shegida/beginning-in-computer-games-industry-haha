@@ -16,5 +16,8 @@ typedef struct
     int attack;
     int hp;
     int stamina;
+    int place ;
+    int max_hp;
+    struct Entity *next;
     SDL_Texture *texture;
 }Entity;
